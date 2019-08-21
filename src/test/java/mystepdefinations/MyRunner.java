@@ -7,7 +7,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith (Cucumber.class)
 //for all feature file
-@CucumberOptions(features="C:\\Users\\training_h2a.06.15\\Desktop\\Selenium workspace\\cucumber1\\myfeatures\\DemoTags.feature",glue="mystepdefinations",tags= {"@Regression,@Smoke"})
+@CucumberOptions(features="C:\\Users\\training_h2a.06.15\\Desktop\\Selenium workspace\\cucumber1\\myfeatures\\DemoTags.feature",glue="mystepdefinations",tags= {"@Regression,@Smoke"},plugin= {"html:target/cucumber-htmlreport.html","json:target/cucumber.json"})
 //for single feature file
 //@CucumberOptions(features="C:\\Users\\training_h2a.06.15\\Desktop\\Selenium workspace\\cucumber1\\src\\test\\java\\mystepdefinations\\TestmeLogin.java",glue="mystepdefinations")
 public class MyRunner {
